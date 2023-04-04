@@ -1,0 +1,35 @@
+<form class="flex flex-col max-w-[370px] gap-3 p-2 shadow-lg rounded-md shadow-gray-700 border border-gray-700 transition-all lg:p-5">
+  <label class="flex justify-between items-center focus-within:text-gray-700 transition-all">
+    Name
+    <input class="p-1 outline-none text-white rounded-md" name="name" type="text" autocomplete="off">
+  </label>
+  <p class="text-red-600 text-xs hidden">Name must have at least 2 and no more than 25 symbols</p>
+  <label class="flex justify-between items-center focus-within:text-gray-700 transition-all">
+    Surname
+    <input class="p-1 outline-none text-white rounded-md" name="surname" type="text" autocomplete="off">
+  </label>
+  <p class="text-red-600 text-xs hidden">Surname must have at least 2 and no more than 25 symbols</p>
+  <label class="flex justify-between items-center focus-within:text-gray-700 transition-all">
+    Email
+    <input class="p-1 outline-none text-white rounded-md" name="email" type="email" autocomplete="off">
+  </label>
+  <p class="text-red-600 text-xs hidden">Email is not valid</p>
+  <label class="flex justify-between items-center focus-within:text-gray-700 transition-all">
+    Birthday
+    <input class="p-1 outline-none rounded-md text-white" name="birthday" type="date">
+  </label>
+  <p class="text-red-600 text-xs hidden">Birthday must be less than today</p>
+  <label class="flex justify-between items-center focus-within:text-gray-700 transition-all">
+    Password
+    <input class="p-1 outline-none rounded-md text-white" name="password" type="password" autocomplete="off">
+  </label>
+  <p class="text-red-600 text-xs hidden">
+    Password must contain at least 8 symbols, at least 1 capital letter, at least one int from 1 to 9, at least one of !@#$% symbols
+  </p>
+  <label class="flex justify-between items-center gap-2 focus-within:text-gray-700 transition-all">
+    Confirm password
+    <input class="p-1 outline-none rounded-md text-white" name="confirm-password" type="password" autocomplete="off">
+  </label>
+  <p class="text-red-600 text-xs hidden">Password are not equal</p>
+  <button class="w-max self-center" type="submit">Submit</button>
+</form>
